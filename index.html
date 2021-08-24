@@ -9,13 +9,20 @@
   </head>
   <body>
       <!-- container for canvas and startup screen -->
+      <div id="display">
+        <p id="timer-display">Timer: </p>
+        <h3 id="random-letter">Letters: </h3>
+      </div>
     <div id="container">
-      <div class="game-intro">
+      <div id="game-intro">
         <h1>Keyboard Cowboy</h1>
         <div class="space"></div>
-        <button id="start">START GAME</button>
+        <button onclick="startGame()" id="start">START GAME</button>
       </div>
       <canvas id="canvas" width="700" height="500"></canvas>
     </div>
+
+    <script src="/main.js"></script>
+    <script src="/levels.js"></script>
   </body>
 </html>

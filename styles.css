@@ -1,15 +1,13 @@
 #container {
     position: absolute;
     z-index: -1;
-    /* margin: auto; */
     width: 700px;
     height: 500px;
-    /* display: block; */
-    /* margin: auto; */
-    /* display: flex; */
+    margin: 0;
+    display: block;
 }
 
-.game-intro {
+#game-intro {
     z-index: 5;
     background-image: url(/images/Desert/Desert.png);
     background-size: cover;
@@ -19,11 +17,11 @@
     align-items: center;
     width: 700px;
     height: 500px;
+    position: absolute;
 }
 
 h1 {
-    margin: auto;
-    font-family: calibri;
+    margin-top: 200px;
 }
 
 .space {
@@ -37,8 +35,6 @@ canvas {
     background-color: white;
     z-index: 1;
     position: relative;
-    margin-top: -200px;
-
 }
 
 body {
@@ -46,6 +42,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
+    font-family: calibri;
 }
 
 button {
