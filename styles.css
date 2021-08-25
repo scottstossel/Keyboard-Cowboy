@@ -1,84 +1,169 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: grey;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: calibri;
+  background-color: grey;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: calibri;
+  background-image: url('/images/Desert/starry\ background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
 }
 
 #container {
-    /* z-index: -2; */
-    width: 700px;
-    height: 500px;
-    background-color: darkgray;
-    padding: 1rem;
-    padding: 0;
-    background-image: url(/images/Desert/Desert1.png);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  z-index: 0;
+  width: 600px;
+  height: 400px;
+  background-color: darkgray;
+  padding: 1rem;
+  padding: 0;
+  background-image: url(/images/Desert/game-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 50px;
 }
 
 #game-intro {
-    z-index: 5;
-    background-image: url(/images/Desert/Desert.png);
-    background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 700px;
-    height: 500px;
-    position: absolute;
+  z-index: 5;
+  background-image: url(/images/Desert/desert-gif.gif);
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 400px;
+  position: absolute;
 }
 
 h1 {
-    margin-top: 200px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  color: #d7ceb2;
+  font: 65px 'Sansita One';
+  text-shadow: 3px 3px 0px #393D48, 6px 6px 0px #5c5f72;
 }
 
 .space {
-    width: 100%;
+  width: 100%;
 }
 
-
 button {
-    /* margin-top: 400px; */
-    width: 200px;
-    height: 50px;
-    box-shadow: 5px 5px 10px 5px rgb(63, 62, 62);
-    border-radius: 10px;
+  /* margin-top: 400px; */
+  width: 200px;
+  height: 50px;
+  box-shadow: 5px 5px 10px 5px rgb(63, 62, 62);
+  border-radius: 10px;
+  background-color: #d7ceb2;
+  font-family: 'Sansita One';
 }
 
 #display {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    position: absolute;
-    top: 0%;
-    left: 25%;
-    /* z-index: -1; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  /* z-index: -1; */
 }
 
 #instructions {
-    position: absolute;
-    bottom: 0px;
-    margin-bottom: 0;
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 3%;
+  color: lightgray;
 }
 
 #input {
-    margin: 20%;
+  margin: 20%;
 }
 
-.correct {
-    color: green;
+#cowboy {
+    width: 100px;
+    margin-left: 110px;
+    margin-top: 290px;
+    position: absolute;
 }
 
-.incorrect {
-    color: red;
-    text-decoration: underline;
+#enemy {
+    width: 100px;
+    margin-left: 400px;
+    margin-top: 290px;
+    position: absolute;
+}
+
+.display {
+    margin-left: 5%;
+}
+
+#spacebar {
+    position: absolute;
+    margin-left: 11%;
+    margin-top: 12%;
+    color: #d7ceb2;
+    font-family: 'Sansita One';
+    animation: animate 1.8s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.9;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+#win-screen {
+    position: absolute;
+    background-image: url(/images/Desert/desert-gif.gif);
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: -10;
+}
+
+#win-screen h2 {
+    color: #d7ceb2;
+    font-family: 'Sansita One';
+    margin-top: 30px;
+    text-shadow: 3px 3px 0px #393D48, 6px 6px 0px #5c5f72;
+}
+
+#lose-screen {
+    position: absolute;
+    background-image: url(/images/Desert/desert-gif.gif);
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: -10;
+}
+#lose-screen h2 {
+    color: #d7ceb2;
+    font-family: 'Sansita One';
+    margin-top: 30px;
+    text-shadow: 3px 3px 0px #393D48, 6px 6px 0px #5c5f72;
 }

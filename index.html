@@ -10,23 +10,45 @@
   <body>
     <!-- container -->
     <div id="container">
+      <h2 id="spacebar">PRESS SPACE BAR TO BEGIN</h2>
       <div id="game-intro">
         <h1>Keyboard Cowboy</h1>
         <div class="space"></div>
         <button onclick="startGame()" id="start">START GAME</button>
       </div>
       <!-- game display -->
-      <h3 id="timer-display">Timer:</h3>
-      <h3 id="random-letter">Letters:</h3>
-      <h3 id="lives">Lives:</h3>
+      <div class="display">
+        <h3 id="timer-display">Timer:</h3>
+        <div class="letter-box">
+          <h3>Letters:</h3>
+          <h2 id="random-letter"></h2>
+        </div>
+        <h3 id="score">Score:</h3>
+      </div>
+      <img id="cowboy" src="/images/Sprites Bang Duel/cb_default.png" alt="" />
+      <img
+        id="enemy"
+        src=""
+        alt=""
+      />
     </div>
-
+    <div id="win-screen">
+      <h2>WELL DONE!!</h2>
+      <h2>YOU SAVED THE TOWN!!!</h2>
+    </div>
+    <div id="lose-screen">
+      <h2>Skeletons have taken over :(</h2>
+      <h2>Press spacebar to try again.</h2>
+    </div>
     <p id="instructions">
-      Instructions: <br />
-      Click START GAME to start. <br />
-      Press spacebar to continue to the next level. <br />
-      Press the correct letter(s) before time expires!
+      <b>Instructions: </b><br />
+      Help! Skeletons are invading the town. Only one person can stop them and his name is Keyboard Cowboy. <br>
+      Press the correct letter(s) to help him defeat the skeletons. But be careful! Wrong letters hurt your score.<br />
+      Score 40 points to save the town. Good luck!!
     </p>
+    <audio loop autoplay>
+      <source src="/audio/The Dalmasca Estersand (From 'Final Fantasy XII').mp3">
+    </audio>
     <script src="/main.js"></script>
   </body>
 </html>
