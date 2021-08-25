@@ -8,21 +8,25 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-      <!-- container for canvas and startup screen -->
-      <div id="display">
-        <p id="timer-display">Timer: </p>
-        <h3 id="random-letter">Letters: </h3>
-      </div>
+    <!-- container -->
     <div id="container">
       <div id="game-intro">
         <h1>Keyboard Cowboy</h1>
         <div class="space"></div>
         <button onclick="startGame()" id="start">START GAME</button>
       </div>
-      <canvas id="canvas" width="700" height="500"></canvas>
+      <!-- game display -->
+      <h3 id="timer-display">Timer:</h3>
+      <h3 id="random-letter">Letters:</h3>
+      <h3 id="lives">Lives:</h3>
     </div>
 
+    <p id="instructions">
+      Instructions: <br />
+      Click START GAME to start. <br />
+      Press spacebar to continue to the next level. <br />
+      Press the correct letter(s) before time expires!
+    </p>
     <script src="/main.js"></script>
-    <script src="/levels.js"></script>
   </body>
 </html>

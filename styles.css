@@ -1,10 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: calibri;
+}
+
 #container {
-    position: absolute;
-    z-index: -1;
+    /* z-index: -2; */
     width: 700px;
     height: 500px;
-    margin: 0;
-    display: block;
+    background-color: darkgray;
+    padding: 1rem;
+    padding: 0;
+    background-image: url(/images/Desert/Desert1.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 #game-intro {
@@ -28,22 +45,6 @@ h1 {
     width: 100%;
 }
 
-canvas {
-    /* margin: auto; */
-    /* margin-top: 20px; */
-    padding: 0;
-    background-color: white;
-    z-index: 1;
-    position: relative;
-}
-
-body {
-    background-color: grey;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    font-family: calibri;
-}
 
 button {
     /* margin-top: 400px; */
@@ -51,4 +52,33 @@ button {
     height: 50px;
     box-shadow: 5px 5px 10px 5px rgb(63, 62, 62);
     border-radius: 10px;
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    /* z-index: -1; */
+}
+
+#instructions {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 0;
+}
+
+#input {
+    margin: 20%;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+    text-decoration: underline;
 }
