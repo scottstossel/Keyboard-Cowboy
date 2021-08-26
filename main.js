@@ -42,12 +42,12 @@ function timer() {
       //game end options
       if (score < 45) {
       var image = document.getElementById('cowboy');
-      image.src = '/images/Sprites Bang Duel/cb_gameover.png';
+      image.src = 'images/Sprites Bang Duel/cb_gameover.png';
 
       var enemy = document.getElementById('enemy');
-      enemy.src = '/images/Sprites Bang Duel/enemy_win.png';
+      enemy.src = 'images/Sprites Bang Duel/enemy_win.png';
 
-      var audio = new Audio('/audio/shotgun.mp3');
+      var audio = new Audio('audio/shotgun.mp3');
       audio.play();
       
       setTimeout(gameOver, 2000);
@@ -109,24 +109,24 @@ function level() {
   }
 
   function shootGun() {
-    var audio = new Audio('/audio/gun-shot.wav');
+    var audio = new Audio('audio/gun-shot.wav');
     audio.play();
     var image = document.getElementById('cowboy');
-    image.src = '/images/Sprites Bang Duel/cb_win.png';
+    image.src = 'images/Sprites Bang Duel/cb_win.png';
     var enemy = document.getElementById('enemy');
-    enemy.src = '/images/Sprites Bang Duel/enemy_lose.png'
+    enemy.src = 'images/Sprites Bang Duel/enemy_lose.png'
   }
 
   function takeDamage() {
     var image = document.getElementById('cowboy');
-    image.src = '/images/Sprites Bang Duel/cb_lose.png';
+    image.src = 'images/Sprites Bang Duel/cb_lose.png';
   }
 
   function spawnEnemy() {
     setTimeout(
       function() {
       var image = document.getElementById('enemy');
-      image.src = '/images/Sprites Bang Duel/enemy_default.png';
+      image.src = 'images/Sprites Bang Duel/enemy_default.png';
   }, 500)
   }
 

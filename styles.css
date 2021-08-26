@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: calibri;
-  background-image: url('/images/Desert/starry\ background.jpg');
+  background-image: url('images/Desert/starry\ background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -23,7 +23,7 @@ body {
   background-color: darkgray;
   padding: 1rem;
   padding: 0;
-  background-image: url(/images/Desert/game-bg.jpg);
+  background-image: url(images/Desert/game-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -34,7 +34,7 @@ body {
 
 #game-intro {
   z-index: 5;
-  background-image: url(/images/Desert/desert-gif.gif);
+  background-image: url(images/Desert/desert-gif.gif);
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
@@ -129,7 +129,7 @@ button {
 
 #win-screen {
     position: absolute;
-    background-image: url(/images/Desert/desert-gif.gif);
+    background-image: url(images/Desert/desert-gif.gif);
     background-size: cover;
     width: 600px;
     height: 400px;
@@ -150,7 +150,7 @@ button {
 
 #lose-screen {
     position: absolute;
-    background-image: url(/images/Desert/desert-gif.gif);
+    background-image: url(images/Desert/desert-gif.gif);
     background-size: cover;
     width: 600px;
     height: 400px;
