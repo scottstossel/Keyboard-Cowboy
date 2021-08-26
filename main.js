@@ -30,7 +30,7 @@ function removeBG() {
 function timer() {
   // alert('timer start');
   time = true;
-  let sec = 5;
+  let sec = 30;
   let timer = setInterval(function () {
     document.getElementById("timer-display").innerHTML = "Timer: " + sec;
     sec--;
@@ -40,7 +40,7 @@ function timer() {
       document.getElementById('timer-display').innerHTML = "Timer: " + sec;
       time = false;
       //game end options
-      if (score < 40) {
+      if (score < 45) {
       var image = document.getElementById('cowboy');
       image.src = '/images/Sprites Bang Duel/cb_gameover.png';
 
@@ -80,8 +80,6 @@ function youWin() {
 document.body.onkeyup = function(e) {
   if (e.code == 'Space' && start == true) {
     spacebar.parentNode.removeChild(spacebar);
-    loseScreen.style.zIndex = "-10";
-    winScreen.style.zIndex = "-10";
     level();
     return;
   }
@@ -130,4 +128,11 @@ function level() {
       var image = document.getElementById('enemy');
       image.src = '/images/Sprites Bang Duel/enemy_default.png';
   }, 500)
+  }
+
+  function restartLevel() {
+    loseScreen.style.zIndex = "-10";
+    winScreen.style.zIndex = "-10";
+    timer();
+    level();
   }
