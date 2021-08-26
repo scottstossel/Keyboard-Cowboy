@@ -14,7 +14,9 @@
       <div id="game-intro">
         <h1>Keyboard Cowboy</h1>
         <div class="space"></div>
-        <button onclick="startGame()" id="start">START GAME</button>
+        <button onclick="startEasyGame()" id="easy">EASY</button>
+        <button onclick="startGame()" id="start">NORMAL</button>
+        <button onclick="startHardGame()" id="hard">HARD</button>
       </div>
       <!-- game display -->
       <div class="display">
@@ -33,12 +35,13 @@
       />
     </div>
     <div id="win-screen">
-      <h2>WELL DONE!!</h2>
-      <h2>YOU SAVED THE TOWN!!!</h2>
+      <h2>WELL DONE!! YOU SAVED THE TOWN!!!</h2>
+      <h2>Press enter to try for a new high score</h2>
     </div>
     <div id="lose-screen">
+      <img src="images/Sprites Bang Duel/cb_gameover.png" alt="">
       <h2>Skeletons have taken over :(</h2>
-      <h2>Press spacebar to try again.</h2>
+      <h2>Press enter to try again.</h2>
     </div>
     <p id="instructions">
       <b>Instructions: </b><br />
@@ -46,9 +49,8 @@
       Press the correct letter(s) to help him defeat the skeletons. But be careful! Wrong letters hurt your score.<br />
       Score 45 points to save the town. Good luck!!
     </p>
-    <audio loop autoplay>
-      <source src="audio/The Dalmasca Estersand (From 'Final Fantasy XII').mp3">
-    </audio>
+
+    
     <script src="main.js"></script>
   </body>
 </html>

@@ -29,7 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 50px;
+  margin-top: 4%;
 }
 
 #game-intro {
@@ -59,8 +59,9 @@ h1 {
 
 button {
   /* margin-top: 400px; */
-  width: 200px;
+  width: 180px;
   height: 50px;
+  margin: 0 8px;
   box-shadow: 5px 5px 10px 5px rgb(63, 62, 62);
   border-radius: 10px;
   background-color: #d7ceb2;
@@ -93,6 +94,11 @@ button {
     margin-left: 110px;
     margin-top: 290px;
     position: absolute;
+    transition: all 0.2s;
+}
+
+.recoil {
+    transform: translate(-3px, -1px);
 }
 
 #enemy {
@@ -100,6 +106,11 @@ button {
     margin-left: 400px;
     margin-top: 290px;
     position: absolute;
+    transition: all 0.2s;
+}
+
+.enemy-death {
+    transform: rotate(90deg);
 }
 
 .display {
@@ -133,7 +144,7 @@ button {
     background-size: cover;
     width: 600px;
     height: 400px;
-    margin-top: 50px;
+    margin-top: 4%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -150,11 +161,11 @@ button {
 
 #lose-screen {
     position: absolute;
-    background-image: url(images/Desert/desert-gif.gif);
+    background-image: url('https://i.gifer.com/origin/e2/e285ec0c2e56c8c3fe37f2c59d00e5ed.gif');
     background-size: cover;
     width: 600px;
     height: 400px;
-    margin-top: 50px;
+    margin-top: 4%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -165,5 +176,34 @@ button {
     color: #d7ceb2;
     font-family: 'Sansita One';
     margin-top: 30px;
-    text-shadow: 3px 3px 0px #393D48, 6px 6px 0px #5c5f72;
+    animation: animate 1.8s linear infinite;
+    /* text-shadow: 3px 3px 0px #393D48, 6px 6px 0px #5c5f72; */
+}
+
+#lose-screen img {
+    width: 100px;
+    position: absolute;
+    animation: lose 8s linear infinite;
+    margin-top: 5%;
+    margin-right: 420px;
+    opacity: 0.4;
+}
+
+@keyframes lose {
+    0% {
+        /* opacity: 0.1; */
+        transform: rotate(0deg);
+    }
+    50% {
+        /* opacity: 0.5; */
+        transform: rotate(180deg);
+    }
+    100% {
+        /* opacity: 0.1; */
+        transform: rotate(360deg);
+    }
+}
+
+audio {
+    display: none;
 }
