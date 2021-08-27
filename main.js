@@ -2,6 +2,7 @@
 const startGameBtn = document.getElementById("start");
 const easyGameBtn = document.getElementById('easy');
 const hardGameBtn = document.getElementById('hard');
+const impossibleGameBtn = document.getElementById('impossible');
 const startScreen = document.getElementById("game-intro");
 const letterDisplay = document.getElementById('random-letter');
 const scoreDisplay = document.getElementById('score');
@@ -40,6 +41,9 @@ function timer() {
   }
   else if (difficulty == 'hard') {
     sec = 30;
+  }
+  else if (difficulty == 'impossible') {
+    sec = 24;
   }
   // sec = 30;
   let timer = setInterval(function () {
@@ -100,6 +104,15 @@ function startHardGame() {
   var audio = new Audio("audio/The Dalmasca Estersand (From 'Final Fantasy XII').mp3");
   audio.play();
   return difficulty = 'hard';
+}
+function startImpossibleGame() {
+  removeBG();
+  start = true;
+  var sound = new Audio('audio/start sound.wav');
+  sound.play();
+  var audio = new Audio("audio/The Dalmasca Estersand (From 'Final Fantasy XII').mp3");
+  audio.play();
+  return difficulty = 'impossible';
 }
 
 //game over

@@ -14,6 +14,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;
+  height: 100vh;
 }
 
 #container {
@@ -29,7 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 4%;
+  margin-top: -8%;
 }
 
 #game-intro {
@@ -59,9 +60,9 @@ h1 {
 
 button {
   /* margin-top: 400px; */
-  width: 180px;
+  width: 125px;
   height: 50px;
-  margin: 0 8px;
+  margin: 0 10px 10px 10px;
   box-shadow: 5px 5px 10px 5px rgb(63, 62, 62);
   border-radius: 10px;
   background-color: #d7ceb2;
@@ -144,7 +145,7 @@ button {
     background-size: cover;
     width: 600px;
     height: 400px;
-    margin-top: 4%;
+    margin-top: -8%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -161,11 +162,11 @@ button {
 
 #lose-screen {
     position: absolute;
-    background-image: url('https://i.gifer.com/origin/e2/e285ec0c2e56c8c3fe37f2c59d00e5ed.gif');
+    background-image: url('images/game\ over.gif');
     background-size: cover;
     width: 600px;
     height: 400px;
-    margin-top: 4%;
+    margin-top: -8%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -204,6 +205,3 @@ button {
     }
 }
 
-audio {
-    display: none;
-}
